@@ -6,7 +6,7 @@
 
 <ul class="overallLists">
   {%for item in platform %}
-    <li class="myLists">
+
       <a class="homelist" href=/platform/{{item.id}}>
       {% if item.logo%}
         <img class="logo" src="{{item.logo.url}}" alt = "Logo video games" >
@@ -15,7 +15,7 @@
       {%endif%}
       {{item.name}}
       </a>
-    </li>
+
     {%endfor%}
 </ul>
 
