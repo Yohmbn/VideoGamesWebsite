@@ -1,7 +1,7 @@
 {% extends "layout.njk" %}
 
 {%block content%}
-<h1>Welcome to our home pa</h1>
+<h1>Welcome to our home page</h1>
 <h2> Select your gaming platform</h2>
 
 <ul class="overallLists">
@@ -11,7 +11,7 @@
       {% if item.logo%}
         <img class="logo" src="{{item.logo.url}}" alt = "Logo video games" >
       {%else%}
-        <img class="logo" src="/images/No_Cover.png" alt = "Logo video games undefined" >
+        <img class="logo" src="/images/No_Logo_logo.png" alt = "Logo video games undefined" >
       {%endif%}
       {{item.name}}
       </a>

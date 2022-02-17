@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  background: rgb(248, 250, 250);
+  background: #34495e;
   text-align: justify;
   color: #fff;
   padding-top: 10vw;
-  padding-bottom: 30vw;
+  padding-bottom: 10vw;
   text-align: center;
 }
 
@@ -20,9 +20,9 @@ a, a:hover, a:focus, a:active {
 }
 
 body{
-  background-color: rgb(204, 207, 209);
+  background-color: rgba(209, 206, 204, 0.473);
   font-family: "Gill Sans", sans-serif;
-  color: rgb(14, 45, 80);
+  color: rgb(142, 211, 238);
 }
 
 .footer{
@@ -30,8 +30,8 @@ body{
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(231, 218, 218);
-  color: rgb(34, 35, 95);
+  background-color: rgb(139, 167, 212);
+  color: rgb(27, 212, 245);
   text-align: center;
 }
 
