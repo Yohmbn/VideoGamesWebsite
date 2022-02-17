@@ -5,8 +5,8 @@
   background: #34495e;
   text-align: justify;
   color: #fff;
-  padding-top: 10vw;
-  padding-bottom: 10vw;
+  padding-top: 0vw;
+  padding-bottom: 0vw;
   text-align: center;
 }
 
@@ -54,12 +54,12 @@ body{
 }
 
 .logo{
-  width: 20px;
-  height: 18px;
+  width: 200px;
+  height: 180px;
 }
 
 .myLists{
-  height: 26px
+  height: 260px
 }
 
 .coverGame{
