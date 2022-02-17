@@ -2,13 +2,12 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  background: rgb(14, 45, 80);
+  background: rgb(5, 229, 245);
   text-align: justify;
-  color:rgb(85, 74, 74);
-  height: 5em;
-  padding-left: 30px;
-  padding-right: 30px;
-  align-items: center;
+  color: #fff;
+  padding-top: 10vw;
+  padding-bottom: 30vw;
+  text-align: center;
 }
 
 a, a:hover, a:focus, a:active {
@@ -77,3 +76,6 @@ body{
   width: 75px;
   height: 60px;
 }
+
+
+
