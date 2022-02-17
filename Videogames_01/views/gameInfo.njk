@@ -1,0 +1,16 @@
+{% extends "layout.njk" %}
+
+{%block content%}
+
+<img class="coverGame" src="{{gameInfo.cover.url}}" alt = "Logo video games" >
+<h1>{{gameInfo.name}}</h1>
+
+<h3>Screenshots of the game</h3>
+
+<ul class="overallLists">
+  {%for item in gameInfo.screenshots%}
+      <img class="screenshots" src="{{item.url}}" alt = "screenshots" >
+  {%endfor%}
+</ul>
+
+{% endblock %}

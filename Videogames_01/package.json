@@ -9,6 +9,7 @@
     "build": "tsc"
   },
   "devDependencies": {
+    "@types/": "fewlines-education/request",
     "@types/express": "^4.17.13",
     "@types/node": "17.0.15",
     "@types/nunjucks": "^3.2.1",
@@ -57,7 +58,7 @@
     }
   },
   "dependencies": {
-    "@fewlines-education/request": "fewlines-education/request",
+    "@fewlines-education/request": "^0.0.1",
     "express": "^4.17.2",
     "nunjucks": "^3.2.3"
   }
