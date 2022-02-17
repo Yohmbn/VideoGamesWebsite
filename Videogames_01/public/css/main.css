@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  background: rgb(5, 229, 245);
+  background: rgb(248, 250, 250);
   text-align: justify;
   color: #fff;
   padding-top: 10vw;
@@ -31,7 +31,7 @@ body{
   bottom: 0;
   width: 100%;
   background-color: rgb(231, 218, 218);
-  color: rgb(85, 74, 74);
+  color: rgb(34, 35, 95);
   text-align: center;
 }
 
@@ -72,10 +72,7 @@ body{
   height: 180px;
 }
 
-.backArrow{
-  width: 75px;
-  height: 60px;
-}
+
 
 
 
