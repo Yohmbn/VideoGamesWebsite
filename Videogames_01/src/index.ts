@@ -54,8 +54,8 @@ type PlatformInfo = {
   logo: Logo;
 };
 
-app.get("/platform/:id", (httpRequest, response) => {
-  const id = httpRequest.params.id;
+app.get("/platform/:id", (req, response) => {
+  const id = req.params.id;
   console.log(id);
 
   request("http://videogame-api.fly.dev/platforms", (error, body) => {
