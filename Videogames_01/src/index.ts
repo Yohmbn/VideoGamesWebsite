@@ -13,13 +13,29 @@ app.set("view engine", "njk");
 
 app.use(express.static("public"));
 
-app.get("/", (httpRequest, response) => {
+app.get("/", (req, response) => {
   request("http://videogame-api.fly.dev/platforms", (error, body) => {
     if (error) {
       throw error;
     }
-    const platform = JSON.parse(body).platforms;
-    response.render("home", { platform });
+    JSON.parse(body).platforms;
+    let page = 1;
+
+    if (req.query.page === undefined || Number(req.query.page) <= 0 || isNaN(Number(req.query.page))) {
+      response.redirect("/?page=1");
+    } else {
+      page = Number(req.query.page);
+
+      request(`http://videogame-api.fly.dev/platforms?page=${page}`, (error, body) => {
+        if (error) {
+          throw error;
+        }
+
+        const platform = JSON.parse(body).platforms;
+
+        response.render("home", { platform, page });
+      });
+    }
   });
 });
 

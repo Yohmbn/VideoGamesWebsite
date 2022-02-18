@@ -1,0 +1,23 @@
+{% extends "layout.njk" %}
+
+
+
+{%block content%}
+
+<p>
+<a href="/" ><img class="backArrow" src="/images/back_arrow.png" alt = "Back Arrow"></a>
+</p>
+
+<h1>Select your favorite game </h1>
+
+<ul class="overallLists">
+  {%for item in allGames%}
+    <li class="myLists">
+      <a class="homelist" href=/plateform/games/{{item.id}}>
+        {{item.name}}
+      </a>
+    </li>
+  {%endfor%}
+</ul>
+
+{% endblock %}
